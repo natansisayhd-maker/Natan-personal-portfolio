@@ -1,7 +1,7 @@
 :root {
     --base-color: rgb(193, 216, 231);
     --text-color: black;
-    --primary-color: rgb(59, 52, 52);
+    --primary-color: rgb(193, 192, 192);
     --accent-color: linear-gradient(to right, rgb(4, 253, 220), rgb(127, 7, 255));
     --border-color: black;
     --card-color: rgb(225, 237, 245);
@@ -12,7 +12,7 @@
 .darkmode {
     --base-color: rgb(1, 1, 1);
     --text-color: rgb(245, 245, 245);
-    --primary-color: rgb(59, 52, 52);
+    --primary-color: rgb(193, 192, 192);
     --accent-color: linear-gradient(to right, rgb(127, 7, 255), rgb(4, 253, 220));
     --border-color: white;
     --card-color: rgb(30, 30, 30);
@@ -46,6 +46,19 @@ header{
     padding-right: 0.8rem;
     border-radius: 3rem;
     z-index: 1000;
+}
+#theme-switch{
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: var(--header-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#theme-switch svg{
+    fill: var(--primary-color);
 }
 body{
     background-color: var(--base-color);
@@ -182,12 +195,9 @@ section{
     font-size: 3.9rem;
     font-weight: 600;
     margin-bottom: 5rem;
-}
-.experience h2 {
     font-size: clamp(1.8rem, 5vw, 4rem);
     max-width: 100%;
     overflow-wrap: break-word;
-    text-align: center;
 }
 .experience-info{
     display: flex;
