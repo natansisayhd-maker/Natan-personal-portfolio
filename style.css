@@ -60,6 +60,15 @@ header{
 #theme-switch svg{
     fill: var(--primary-color);
 }
+#theme-switch svg:last-child{
+    display: none;
+}
+.darkmode #theme-switch svg:first-child{
+    display: none;
+}
+.darkmode #theme-switch svg:last-child{
+    display: block;
+}
 body{
     background-color: var(--base-color);
     color: var(--text-color);
