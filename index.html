@@ -94,16 +94,129 @@
 
    </section>
    <section id="contact" class="contact">
-    <div class="input-box">
         <h2 class="section-title">Contact Me</h2>
-        <div class="input">
-             <i class="fa-solid fa-envelope"></i>
-            <input class="text" placeholder="example@gmail.com">
-            
+        <form action="">
+        <div class="contact-container">
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <h3>Get In Touch</h3>
+            <p class="contact-description">
+                Have a project in mind or want to work together? i would love to hear from you!
+            </p>
+
+            <div class="contact-details">
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h4>Email</h4>
+                        <p>yourname@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div>
+                        <h4>Location</h4>
+                        <p>Ethiopia</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <div>
+                        <h4>Availability</h4>
+                        <p>Open to opportunities</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="contact-socials">
+                <h4>Connect with me</h4>
+
+                <div class="social-links">
+                    <a href="https://github.com/yourusername"
+                       target="_blank" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <a href="https://linkedin.com/in/yourusername"
+                       target="_blank" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="https://t.me/yourusername"
+                       target="_blank" aria-label="Telegram">
+                        <i class="fa-brands fa-telegram"></i>
+                    </a>
+
+                    <a href="https://instagram.com/yourusername"
+                       target="_blank" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
         </div>
-       
-        <button class="btn">Submit</button>
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+            <h3>Send Me a Message</h3>
+
+            <form action="#" method="POST">
+
+                <div class="input-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name"
+                           name="name"
+                           placeholder="Enter your name"
+                           required>
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email"
+                           name="email"
+                           placeholder="Enter your email"
+                           required>
+                </div>
+
+                <div class="input-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject"
+                           name="subject"
+                           placeholder="Enter subject"
+                           required>
+                </div>
+
+                <div class="input-group">
+                    <label for="message">Message</label>
+                    <textarea id="message"
+                              name="message"
+                              rows="5"
+                              placeholder="Write your message..."
+                              required></textarea>
+                </div>
+
+                <button type="submit" class="send-btn">
+                    Send Message
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+
+            </form>
+        </div>
+
     </div>
+</section>
+    </form>
+    
    </section>
    <footer>
     <ul class="nav-buttons">
